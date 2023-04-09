@@ -1,0 +1,10 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ site.Title }}</title>
+
+{{- $styles := (resources.Get "styles.css") | minify }}
+{{- $chromastyles := (resources.Get "chromastyles.css") | minify }}
+{{- $combo := (slice $styles $chromastyles) | resources.Concat "assets/stylesheet.css" }}
+<link crossorigin="anonymous" href="{{ $combo.RelPermalink }}" rel="preload stylesheet" as="style">
+

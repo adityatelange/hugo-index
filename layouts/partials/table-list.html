@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <tr>
+      {{- with site.Params.headers }}
+      <th>{{.key}}</th>
+      <th>{{.value}}</th>
+      {{- end }}
+    </tr>
+  </thead>
+  <tbody>
+    {{- range .RegularPages}}
+    <tr>
+      <td><a href="{{.Permalink}}">{{ .Title }}</a></td>
+      <td>
+        <ul>
+          {{- range (.GetTerms "tags") }}
+          <li class="tagsList"><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+          {{- end }}
+        </ul>
+      </td>
+    </tr>
+    {{- end }}
+  </tbody>
+</table>

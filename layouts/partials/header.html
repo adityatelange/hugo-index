@@ -1,0 +1,15 @@
+<header>
+  <h1>
+    <a href="{{ "" | absURL }}">{{ site.Title }}</a>
+    {{- if not .IsHome }}
+    <span class="hl">/</span>
+    <a href="{{.Permalink}}">
+      {{- if eq .Kind "term" }}
+      <span class="hl">{{ .Title }}</span>
+      {{- else }}
+      <span>{{ .Title }}</span>
+      {{- end }}
+    </a>
+    {{- end }}
+  </h1>
+</header>
