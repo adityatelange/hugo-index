@@ -1,0 +1,25 @@
+baseURL: https://adityatelange.github.io/hugo-index/
+languageCode: en-us
+title: Index
+theme: ../../
+pygmentsUseClasses: true
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  headers:
+    key: Title
+    value: Tags
+
+permalinks:
+  tags: "@:slug"
+
+taxonomies:
+  tag: "tags"
