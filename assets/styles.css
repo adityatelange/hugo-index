@@ -8,7 +8,9 @@
   box-sizing: border-box;
 }
 
-ul {
+ul,
+p,
+h1 {
   padding: 0;
   margin: 0;
 }
@@ -17,12 +19,17 @@ body {
   font-family: sans, sans-serif;
   color: var(--primary);
   text-align: left;
+  margin: 1rem;
 }
 
 header,
 .content {
   margin: auto;
   max-width: var(--max-width);
+}
+
+header {
+  margin-bottom: 1rem;
 }
 
 header h1 a {
@@ -32,6 +39,10 @@ header h1 a {
 
 header h1 .hl {
   color: var(--secondary);
+}
+
+header .desc {
+  color: var(--secondary)
 }
 
 table {
@@ -45,6 +56,7 @@ a {
 
 .all-tags {
   text-align: center;
+  margin-top: 1rem;
 }
 
 .tagsList,
