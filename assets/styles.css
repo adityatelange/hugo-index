@@ -1,7 +1,7 @@
 :root {
   --primary: rgba(0, 0, 0);
   --secondary: rgba(191, 7, 7);
-  --max-width: 800px;
+  --max-width: 50rem;
 }
 
 * {
