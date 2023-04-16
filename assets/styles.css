@@ -105,3 +105,15 @@ blockquote {
   padding: 0 1em;
   border-left: .25em solid var(--secondary);
 }
+
+.searchBox input {
+  width: 100%;
+  border-radius: 0.2em;
+  border: 0.1em solid var(--secondary);
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+
+.searchBox {
+  margin: 1rem 0;
+}
