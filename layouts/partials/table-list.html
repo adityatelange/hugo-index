@@ -12,11 +12,15 @@
     <tr>
       <td><a href="{{.Permalink}}">{{ .Title }}</a></td>
       <td>
+        {{- if site.Params.showDescriptioninHome }}
+          {{ .Description }}
+        {{- else }}
         <ul>
           {{- range (.GetTerms "tags") }}
           <li class="tagsList"><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
           {{- end }}
         </ul>
+        {{- end }}
       </td>
     </tr>
     {{- end }}

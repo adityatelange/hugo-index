@@ -14,9 +14,11 @@ markup:
       unsafe: true
 
 params:
+  # showDescriptioninHome: true
   headers:
     key: Title
     value: Tags
+    # value: Description
 
 permalinks:
   tags: "@:slug"
