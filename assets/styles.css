@@ -76,3 +76,8 @@ a {
   padding: 0.5rem;
   border-radius: 0.2rem;
 }
+
+pre {
+  overflow-x: auto;
+  position: relative;
+}
