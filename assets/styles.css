@@ -81,3 +81,9 @@ pre {
   overflow-x: auto;
   position: relative;
 }
+
+blockquote {
+  margin: 0;
+  padding: 0 1em;
+  border-left: .25em solid var(--secondary);
+}
