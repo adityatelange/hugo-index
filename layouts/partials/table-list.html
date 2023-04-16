@@ -1,4 +1,4 @@
-<table>
+<table class="tableList">
   <thead>
     <tr>
       {{- with site.Params.headers }}
@@ -13,11 +13,11 @@
       <td><a href="{{.Permalink}}">{{ .Title }}</a></td>
       <td>
         {{- if site.Params.showDescriptioninHome }}
-          {{ .Description }}
+        {{ .Description }}
         {{- else }}
-        <ul>
+        <ul class="tagsList">
           {{- range (.GetTerms "tags") }}
-          <li class="tagsList"><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+          <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
           {{- end }}
         </ul>
         {{- end }}

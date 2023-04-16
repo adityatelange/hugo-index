@@ -1,7 +1,7 @@
 <div class="all-tags">
-  <ul>
+  <ul class="tagsList">
     {{- range .Site.Taxonomies.tags }}
-    <li class="tagsList"><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+    <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
     {{- end }}
   </ul>
 </div>

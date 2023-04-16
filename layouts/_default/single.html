@@ -1,8 +1,8 @@
 {{- define "main" }}
 
-<ul>
+<ul class="tagsList single">
   {{ range (.GetTerms "tags") }}
-  <li class="tagsList"><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+  <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
   {{ end }}
 </ul>
 

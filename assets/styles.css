@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-ul,
 p,
 h1 {
   padding: 0;
@@ -56,10 +55,25 @@ a {
 
 .all-tags {
   text-align: center;
-  margin-top: 1rem;
 }
 
-.tagsList,
+.tagsList {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+:not(td)>.tagsList:not(.single) {
+  justify-content: center;
+}
+
+:not(td)>.tagsList {
+  margin: 1rem 0;
+}
+
+.tagsList li,
 .tagTitle {
   display: inline-block;
   color: var(--secondary);
@@ -68,7 +82,7 @@ a {
   border-radius: 0.2em;
 }
 
-.tagsList a {
+.tagsList li a {
   text-decoration: none;
 }
 
