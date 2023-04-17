@@ -112,3 +112,7 @@ table {
 .tableList th {
   padding: 0.2rem 0.4rem;
 }
+
+.tableList tr:hover td {
+  background-color: var(--secondary-hover);
+}
