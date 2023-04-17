@@ -3,6 +3,7 @@ languageCode: en-us
 title: Index
 theme: ../../
 pygmentsUseClasses: true
+enableInlineShortcodes: true
 
 markup:
   highlight:
@@ -25,3 +26,24 @@ permalinks:
 
 taxonomies:
   tag: "tags"
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: false
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
