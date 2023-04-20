@@ -16,6 +16,7 @@ markup:
 
 params:
   # showDescriptioninHome: true
+  # hideAllTagsinHome: true
   headers:
     key: Title
     value: Tags

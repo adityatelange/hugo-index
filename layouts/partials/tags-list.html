@@ -1,3 +1,4 @@
+{{- if not site.Params.hideAllTagsinHome }}
 <div class="all-tags">
   <ul class="tagsList">
     {{- range .Site.Taxonomies.tags }}
@@ -5,3 +6,4 @@
     {{- end }}
   </ul>
 </div>
+{{- end }}
