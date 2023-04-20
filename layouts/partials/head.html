@@ -2,6 +2,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ site.Title }}</title>
+<meta name="robots" content='{{ cond (hugo.IsProduction) ("index, follow") ("noindex, nofollow" ) }}'>
+<meta name="description" content="{{ .Description }}">
 
 {{- $styles := (resources.Get "styles.css") | minify }}
 {{- $chromastyles := (resources.Get "chromastyles.css") | minify }}
