@@ -1,5 +1,11 @@
-{{- $.Scratch.Add "index" slice -}}
+{{ $scratch := newScratch }}
+{{- $scratch.Add "index" slice -}}
 {{- range site.RegularPages -}}
-    {{- $.Scratch.Add "index" (dict "title" .Title "tags" .Params.tags "description" .Description) -}}
+    {{- $scratch.Add "tags" slice -}}
+    {{- range (.GetTerms "tags") }}
+        {{- $scratch.Add "tags" (dict "title" .LinkTitle "permalink" .RelPermalink) }}
+    {{- end }}
+    {{- $scratch.Add "index" (dict "title" .Title "tags" ($scratch.Get "tags") "description" .Description "permalink" .RelPermalink) -}}
+    {{- $scratch.Delete "tags" }}
 {{- end -}}
-{{- $.Scratch.Get "index" | jsonify -}}
+{{- $scratch.Get "index" | jsonify -}}
