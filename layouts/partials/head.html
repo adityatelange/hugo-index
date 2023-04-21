@@ -8,5 +8,4 @@
 {{- $styles := (resources.Get "styles.css") | minify }}
 {{- $chromastyles := (resources.Get "chromastyles.css") | minify }}
 {{- $combo := (slice $styles $chromastyles) | resources.Concat "assets/stylesheet.css" }}
-<link crossorigin="anonymous" href="{{ $combo.RelPermalink }}" rel="preload stylesheet" as="style">
-
+<link crossorigin="anonymous" href="{{ $combo.Permalink }}" rel="preload stylesheet" as="style">
