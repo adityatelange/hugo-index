@@ -3,6 +3,7 @@ languageCode: en-us
 title: Index
 theme: ../../
 pygmentsUseClasses: true
+enableInlineShortcodes: true
 
 markup:
   highlight:
@@ -15,6 +16,7 @@ markup:
 
 params:
   # showDescriptioninHome: true
+  # hideAllTagsinHome: true
   headers:
     key: Title
     value: Tags
@@ -31,3 +33,24 @@ outputs:
     - HTML
     - RSS
     - JSON # for search
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: false
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
