@@ -17,6 +17,7 @@ markup:
 params:
   # showDescriptioninHome: true
   # hideAllTagsinHome: true
+  # searchBoxPlaceholder: "Type here to search..."
   headers:
     key: Title
     value: Tags
