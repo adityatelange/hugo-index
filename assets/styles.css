@@ -112,6 +112,7 @@ table {
 .tableList td,
 .tableList th {
   padding: 0.2rem 0.4rem;
+  width: 50%;
 }
 
 .tableList tr:hover td {
@@ -122,4 +123,16 @@ table {
   background-color: #f0f0f0;
   padding: 0.1rem 0.2rem;
   border-radius: 0.2rem;
+}
+
+.searchBox input {
+  width: 100%;
+  border-radius: 0.2em;
+  border: 0.1em solid var(--secondary);
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.searchBox {
+  margin: 1rem 0;
 }

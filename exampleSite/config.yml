@@ -17,6 +17,7 @@ markup:
 params:
   # showDescriptioninHome: true
   # hideAllTagsinHome: true
+  # searchBoxPlaceholder: "Type here to search..."
   headers:
     key: Title
     value: Tags
@@ -27,6 +28,12 @@ permalinks:
 
 taxonomies:
   tag: "tags"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # for search
 
 privacy:
   vimeo:
