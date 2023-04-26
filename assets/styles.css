@@ -1,6 +1,6 @@
 :root {
   --primary: rgba(0, 0, 0);
-  --secondary: rgba(191, 7, 7);
+  --secondary: rgba(46, 138, 33);
   --secondary-hover: rgba(191, 7, 7, 0.1);
   --max-width: 50rem;
 }
