@@ -1,7 +1,7 @@
 :root {
   --primary: rgba(0, 0, 0);
   --secondary: rgba(46, 138, 33);
-  --secondary-hover: rgba(191, 7, 7, 0.1);
+  --secondary-hover: rgba(46, 138, 33, 0.1);
   --max-width: 50rem;
 }
 
@@ -135,4 +135,55 @@ table {
 
 .searchBox {
   margin: 1rem 0;
+}
+
+.searchBox input:focus-visible {
+  outline: 0.12em solid var(--secondary);
+}
+
+.abonnement form {
+  justify-content: space-between;
+  display: flex;
+}
+
+.abonnement input {
+  width: 42%;
+  display: inline-block;
+  border-radius: 0.2em;
+  border: 0.1em solid var(--secondary);
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.abonnement {
+  margin: 1rem 0;
+}
+
+.abonnement span {
+  display: flex;
+}
+
+.abonnement mark {
+  margin: auto .2rem;
+}
+
+.abonnement input:focus-visible {
+  outline: 0.12em solid var(--secondary);
+}
+
+.abonnement button {
+  display: inline-block;
+  color: var(--secondary);
+  border: .1em solid var(--secondary);
+  padding: .1em .4rem;
+  border-radius: .2em;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+img {
+  box-sizing: border-box;
+  width: auto;
+  max-width: 100%;
 }
