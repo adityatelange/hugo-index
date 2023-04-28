@@ -2,11 +2,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ site.Title }}</title>
+<meta name="robots" content='{{ cond (hugo.IsProduction) ("index, follow") ("noindex, nofollow" ) }}'>
+<meta name="description" content="{{ .Description }}">
 
 {{- $styles := (resources.Get "styles.css") | minify }}
 {{- $chromastyles := (resources.Get "chromastyles.css") | minify }}
 {{- $combo := (slice $styles $chromastyles) | resources.Concat "assets/stylesheet.css" }}
-<link crossorigin="anonymous" href="{{ $combo.RelPermalink }}" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="{{ $combo.Permalink }}" rel="preload stylesheet" as="style">
+
+{{- if .IsHome }}
+{{- $search := (resources.Get "search.js") | js.Build (dict "params" (dict "BaseURL" site.BaseURL)) | resources.Minify }}
+{{- $fuse := (resources.GetRemote "https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.basic.min.js" )}}
+{{- $searchcombo := (slice $fuse $search ) | resources.Concat "assets/search.js" }}
+<link crossorigin="anonymous" rel="preload" as="fetch" href='{{ absURL "index.json" }}'>
+<script defer src="{{ $searchcombo.Permalink }}" rel="preload" as="script"></script>
+{{- end }}
 
 {{- $quicklink := (slice (resources.GetRemote
 "https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js")) |
