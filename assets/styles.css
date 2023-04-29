@@ -133,6 +133,10 @@ table {
   font-size: 1rem;
 }
 
+.searchBox input:focus {
+  outline : 0.1em solid var(--secondary);
+}
+
 .searchBox {
   margin: 1rem 0;
 }
