@@ -4,6 +4,7 @@
 <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ site.Title }}</title>
 <meta name="robots" content='{{ cond (hugo.IsProduction) ("index, follow") ("noindex, nofollow" ) }}'>
 <meta name="description" content="{{ .Description }}">
+<meta name="generator" content="hugo-index">
 
 {{- $styles := (resources.Get "styles.css") | minify }}
 {{- $chromastyles := (resources.Get "chromastyles.css") | minify }}
