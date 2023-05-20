@@ -12,12 +12,12 @@
 
 | Variable                | Value                    | Description |
 | ----------------------- | ------------------------ | ----------- |
-| `showDescriptioninHome` | `true`                   |             |
-| `hideAllTagsinHome`     | `true`                   |             |
-| `searchBoxPlaceholder`  | `Type here to search...` |             |
-| `titleIcon`             | `index.png`              |             |
-| `headers.key`           | `Title`                  |             |
-| `headers.value`         | `Tags`                   |             |
+| `params.showDescriptioninHome` | `true`                   |             |
+| `params.hideAllTagsinHome`     | `true`                   |             |
+| `params.searchBoxPlaceholder`  | `Type here to search...` |             |
+| `params.titleIcon`             | `index.png`              |             |
+| `params.headers.key`           | `Title`                  |             |
+| `params.headers.value`         | `Tags`                   |             |
 | `permalinks.tags`       | `@:slug`                 |             |
 
 ### Powered by
