@@ -1,8 +1,18 @@
 :root {
   --primary: rgba(0, 0, 0);
+  --background: rgba(255, 255, 255);
   --secondary: rgba(191, 7, 7);
   --secondary-hover: rgba(191, 7, 7, 0.1);
   --max-width: 50rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: rgba(255, 255, 255);
+    --background: rgba(0, 0, 0);
+    --secondary: rgb(248, 64, 64);
+    --secondary-hover: rgba(248, 64, 64, 0.1);
+  }
 }
 
 * {
@@ -13,6 +23,7 @@ body {
   font-family: sans, sans-serif;
   -webkit-text-size-adjust: 100%;
   color: var(--primary);
+  background: var(--background);
   text-align: left;
   margin: 1rem;
 }
@@ -131,10 +142,12 @@ table {
   border: 0.1em solid var(--secondary);
   padding: 0.5rem;
   font-size: 1rem;
+  color: var(--primary);
+  background: var(--background);
 }
 
 .searchBox input:focus {
-  outline : 0.1em solid var(--secondary);
+  outline: 0.1em solid var(--secondary);
 }
 
 .searchBox {
