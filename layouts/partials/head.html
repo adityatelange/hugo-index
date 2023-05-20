@@ -22,7 +22,7 @@
 {{- $quicklink := (slice (resources.GetRemote
 "https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js")) |
 resources.Concat "assets/quicklink.js" }}
-<script crossorigin="anonymous" src="{{ $quicklink.RelPermalink }}" rel="preload" as="script"></script>
+<script crossorigin="anonymous" src="{{ $quicklink.Permalink }}" rel="preload" as="script"></script>
 <script>
     window.addEventListener('load', () => {
         quicklink.listen();
