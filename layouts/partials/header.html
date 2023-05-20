@@ -1,7 +1,7 @@
 <header>
   <h1>
     <a href="{{ "" | absURL }}">
-      <img src="{{ site.Params.TitleIcon | absURL }}">
+      {{ with site.Params.TitleIcon }}<img src="{{ . | absURL }}">{{ end }}
       <span>{{ site.Title }}</span>
     </a>
     {{- if not .IsHome }}
