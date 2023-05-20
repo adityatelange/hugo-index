@@ -18,6 +18,7 @@ params:
   # showDescriptioninHome: true
   # hideAllTagsinHome: true
   # searchBoxPlaceholder: "Type here to search..."
+  titleIcon: index.png
   headers:
     key: Title
     value: Tags

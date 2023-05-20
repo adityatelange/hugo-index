@@ -1,6 +1,9 @@
 <header>
   <h1>
-    <a href="{{ "" | absURL }}">{{ site.Title }}</a>
+    <a href="{{ "" | absURL }}">
+      <img src="{{ site.Params.TitleIcon | absURL }}">
+      <span>{{ site.Title }}</span>
+    </a>
     {{- if not .IsHome }}
     <span class="hl">/</span>
     <a href="{{.Permalink}}">
