@@ -134,7 +134,7 @@ table {
 }
 
 .searchBox input:focus {
-  outline : 0.1em solid var(--secondary);
+  outline: 0.1em solid var(--secondary);
 }
 
 .searchBox {
@@ -143,4 +143,14 @@ table {
 
 header h1 img {
   height: 1.5rem;
+}
+
+.content table td,
+.content table th {
+  border: 1px solid var(--primary);
+  padding: 0.2rem 0.4rem;
+}
+
+.content table th {
+  background: var(--secondary-hover);
 }
