@@ -150,6 +150,10 @@ header h1 img {
   padding: 0.2rem 0.4rem;
 }
 
+.content .gist table td {
+  border: initial;
+}
+
 .content table th {
   background: var(--secondary-hover);
 }
@@ -164,7 +168,7 @@ img {
 
 .chroma table.lntable {
   display: block;
-  
+
 }
 
 .chroma .lntable .lntd:last-of-type {
