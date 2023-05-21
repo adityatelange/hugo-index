@@ -52,6 +52,7 @@ table {
   margin-top: 2rem;
   border-spacing: 0;
   border-collapse: collapse;
+  overflow-x: auto;
 }
 
 .all-tags {
@@ -88,8 +89,12 @@ table {
 }
 
 .chroma {
-  padding: 0.5rem;
   border-radius: 0.2rem;
+  margin: 0;
+}
+
+:not(.lntd)>.chroma {
+  padding: 0.3rem;
 }
 
 pre {
@@ -151,4 +156,17 @@ header h1 img {
 
 img {
   max-width: 100%;
+}
+
+.chroma .hl {
+  display: flex;
+}
+
+.chroma table.lntable {
+  display: block;
+  
+}
+
+.chroma .lntable .lntd:last-of-type {
+  width: 100%;
 }
