@@ -10,15 +10,14 @@
 
 ### Variables
 
-| Variable                | Value                    | Description |
-| ----------------------- | ------------------------ | ----------- |
-| `params.showDescriptioninHome` | `true`                   |             |
-| `params.hideAllTagsinHome`     | `true`                   |             |
-| `params.searchBoxPlaceholder`  | `Type here to search...` |             |
-| `params.titleIcon`             | `index.png`              |             |
-| `params.headers.key`           | `Title`                  |             |
-| `params.headers.value`         | `Tags`                   |             |
-| `permalinks.tags`       | `@:slug`                 |             |
+| Variable                       | Value       | Description |
+| ------------------------------ | ----------- | ----------- |
+| `params.showDescriptioninHome` | `true`      |             |
+| `params.hideAllTagsinHome`     | `true`      |             |
+| `params.titleIcon`             | `index.png` |             |
+| `params.headers.key`           | `Title`     |             |
+| `params.headers.value`         | `Tags`      |             |
+| `permalinks.tags`              | `@:slug`    |             |
 
 ### Powered by
 

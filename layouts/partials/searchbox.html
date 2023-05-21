@@ -1,3 +1,10 @@
 <div class="searchBox">
-    <input id="search" autofocus type="search" placeholder='{{ site.Params.searchBoxPlaceholder | default "Search ..." }}' autocomplete="off" />
+    <input id="search" autofocus type="search" placeholder=' 
+    {{- with site.Params.headers }}
+    {{- print "Search among" }}
+    {{- printf " %d %s " (len site.RegularPages) (.key | pluralize | lower) }}
+    {{- print "and" }}
+    {{- printf " %d %s..." (len site.Taxonomies.tags) (.value | pluralize | lower) }}
+    {{- end -}}
+    ' autocomplete="off" />
 </div>
