@@ -107,12 +107,12 @@ blockquote {
 table {
   border-spacing: 0;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .tableList td,
 .tableList th {
   padding: 0.2rem 0.4rem;
-  width: 50%;
 }
 
 .tableList tr:hover td {
