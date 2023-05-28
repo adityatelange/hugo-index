@@ -22,7 +22,8 @@ body {
 }
 
 .main,
-header {
+header,
+footer {
   margin: auto;
   max-width: var(--max-width);
   line-height: 1.3;
@@ -45,6 +46,21 @@ header h1 .hl {
 header .desc,
 header h1 {
   margin: 0;
+}
+
+footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+footer hr {
+  border: 1px solid var(--secondary-hover);
+}
+
+footer .footer-text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 table {

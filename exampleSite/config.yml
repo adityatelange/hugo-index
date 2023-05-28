@@ -4,6 +4,7 @@ title: Index
 theme: ../../
 pygmentsUseClasses: true
 enableInlineShortcodes: true
+# Copyright: © hugo-index authors | [Privacy Policy](#)
 
 markup:
   highlight:
