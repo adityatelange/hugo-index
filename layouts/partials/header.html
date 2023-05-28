@@ -1,7 +1,7 @@
 <header>
   <h1>
     <a href="{{ "" | absURL }}">
-      {{ with site.Params.TitleIcon }}<img src="{{ . | absURL }}">{{ end }}
+      {{ with site.Params.TitleIcon }}<img src="{{ . | absURL }}" alt="{{ site.Title }}">{{ end }}
       <span>{{ site.Title }}</span>
     </a>
     {{- $is404 := eq .Kind "404" }}
