@@ -190,3 +190,8 @@ img {
 .chroma .lntable .lntd:last-of-type {
   width: 100%;
 }
+
+.four-o-four {
+  text-align: center;
+  font-size: 2rem;
+}

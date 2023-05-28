@@ -4,7 +4,8 @@
       {{ with site.Params.TitleIcon }}<img src="{{ . | absURL }}">{{ end }}
       <span>{{ site.Title }}</span>
     </a>
-    {{- if not .IsHome }}
+    {{- $is404 := eq .Kind "404" }}
+    {{- if and (not .IsHome) (not $is404) }}
     <span class="hl">/</span>
     <a href="{{.Permalink}}">
       {{- if eq .Kind "term" }}
