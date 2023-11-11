@@ -42,7 +42,7 @@ privacy:
     disabled: false
     simple: true
   twitter:
-    disabled: false
+    disabled: true
     enableDNT: true
     simple: true
   instagram:
