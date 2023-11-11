@@ -1,1 +1,4 @@
 **/.hugo_build.lock
+Documentation/*
+Documentation/
+Documentation
