@@ -1,11 +1,10 @@
 ---
-title: Index
-description: Index's description
+title: Living off The Land Attacks : Application IoC Generator  
+description: Description
 ---
 
-**Index** is a hugo theme inspired by [GTFOBins](https://gtfobins.github.io/).
+**LoLApp** - Real-Time Threat Intelligence for Living off The Land Attacks at Application level. This project is inspired by [LOLBAS][https://lolbas-project.github.io/] and [GTFOBins][https://gtfobins.github.io/]
 
-This theme is designed to be simple and straightforward, with a focus on providing quick and easy access to useful information.
-
-If you're someone who likes to jot down quick notes or tips this theme is perfect for you.
-We encourage you to give us a [star on GitHub](https://github.com/adityatelange/hugo-index/).
+LoLApp is not a directory of exploits or vulnerabilities. Instead, it provides a nuanced understanding of how everyday applications can be co-opted for nefarious purposes. It’s a testament to the creativity of attackers and a call to arms for defenders to think outside the box. 
+             
+The project emphasizes applications that have been previously leveraged in real-world attacks, ensuring relevance and practicality for effective log analysis [Please find report here]
