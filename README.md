@@ -1,4 +1,5 @@
-<h1 align=center>Hugo Index | <a href="https://adityatelange.github.io/hugo-index/">Demo</a></h1>
+<h1 align=center>Hugo Index | <a href="https://github.com/VedikaBang/LoLApp/"
+">Demo</a></h1>
 
 <p align="center">
 <kbd><img src="https://user-images.githubusercontent.com/21258296/233713549-07016736-3ca1-46a3-895f-9c08b6cd9145.png" alt="Mockup image" title="Mockup" credits="https://screely.com/"/></kbd>
@@ -10,14 +11,6 @@
 
 ### Variables
 
-| Variable                       | Value       | Description |
-| ------------------------------ | ----------- | ----------- |
-| `params.showDescriptioninHome` | `true`      |             |
-| `params.hideAllTagsinHome`     | `true`      |             |
-| `params.titleIcon`             | `index.png` |             |
-| `params.headers.key`           | `Title`     |             |
-| `params.headers.value`         | `Tags`      |             |
-| `permalinks.tags`              | `@:slug`    |             |
 
 ### Powered by
 
