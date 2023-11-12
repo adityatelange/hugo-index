@@ -1,5 +1,5 @@
 ---
-title: "ScreenConnect"
+title: "AnyDesk"
 date: 2023-11-11
 tags: ["Description", "IoCs", "TTPs", "Detection Rules"]
 ---
